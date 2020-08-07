@@ -53,7 +53,7 @@ def parse_molecule(molecule, ending=None):
         elif c == ending:
             update(prev, prev_number, tmp_dict, output)
             return output, i + 2
-        # Otherise through an error
+        # Otherwise through an error
         else:
             raise ValueError('Formula is not correct due to {} is not valid'.format(c))
         i += 1
